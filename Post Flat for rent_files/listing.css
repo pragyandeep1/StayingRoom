@@ -1,0 +1,13 @@
+.block4{margin:0px; margin-bottom:30px;}
+.block4_outer{background:#272727; padding-bottom:15px;color:white;}
+.block4_head{margin:0px;line-height:1.42;font-size:18pt; color:white; font-family: 'open_sanssemibold';}
+.block4_line{border:1px solid #4c4c4c; margin:5px 0 0 -5px; width:80%;}
+.block4_pad{padding:0px; padding-top:10px;}
+.photo_box{margin-right:10px; overflow:hidden; text-align: center;}
+.add_more{background:#2f5d6a;  text-align:center; font-size:17pt; height:196px; width:264px; margin:0px auto; padding:75px 0;}
+.new_col1,.new_col2{display:none;}
+.blah.blahx{max-width:260px;}
+.yourbtn_cont{background:#fff;text-align:center;width:250px;cursor:pointer;height:196px;overflow:hidden;margin: auto;}
+.upfile_s{height: 0px;width: 0px; overflow:hidden;}
+.Rimg{ float:right; display:inline-block;}
+

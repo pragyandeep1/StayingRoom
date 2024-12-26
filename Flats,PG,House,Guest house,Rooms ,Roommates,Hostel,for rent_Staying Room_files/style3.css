@@ -1,0 +1,546 @@
+.btn-primary{
+background-image:none !important;
+background-color:#428bca !important;
+}
+
+.btn-primary:active,.btn-primary:hover,.btn-primary:focus,.open > .dropdown-toggle.btn-primary,.btn-primary.active {
+ background-color: #000066 !important;
+ border-color: #000066 !important;
+ color: #fff;
+}
+.btn-success{
+background-image:none !important;
+background-color:#5cb85c !important;
+}
+.btn-success.active,.btn-success:hover,.btn-success:focus,.open > .dropdown-toggle.btn-success,.btn-success:active {
+background-color: #0a9144 !important;
+border-color: #0a9144 !important;
+
+}
+
+::-webkit-input-placeholder {
+    color: #666;
+	font-weight:400;
+}
+
+:-moz-placeholder {
+    color: #666;
+	font-weight:400;
+}
+
+::-moz-placeholder {
+    color: #666;
+    opacity: 1;
+	font-weight:400;
+}
+
+:-ms-input-placeholder {
+    color: #666;
+	font-weight:400;
+}
+.form-l[readonly]{
+	background-color:#ccff33 !important;
+}
+.help-block{
+	color:#a94442 !important;
+}
+
+.alert-warning{
+	color: #F00 !important;
+	background: #ffb1b1 !important; 
+}
+
+/*###############################################
+Date Picker
+###############################################*/
+.datepicker {
+    border-radius: 4px;
+    left: 0;
+    margin-top: 1px;
+    padding: 4px;
+    top: 0;
+}
+.datepicker:before {
+    border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    content: "";
+    display: inline-block;
+    left: 6px;
+    position: absolute;
+    top: -7px;
+}
+.datepicker:after {
+    border-bottom: 6px solid #ffffff;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    content: "";
+    display: inline-block;
+    left: 7px;
+    position: absolute;
+    top: -6px;
+}
+.datepicker > div {
+    display: none;
+}
+.datepicker table {
+    margin: 0;
+    width: 100%;
+}
+.datepicker td, .datepicker th {
+    border-radius: 4px;
+    height: 20px;
+    text-align: center;
+    width: 20px;
+}
+
+.datepicker td.day:hover {
+    background: none repeat scroll 0 0 #eeeeee;
+    cursor: pointer;
+}
+.datepicker td.day.disabled {
+    color: #eeeeee;
+}
+.datepicker td.old, .datepicker td.new {
+    color: #999999;
+}
+.datepicker td.active, .datepicker td.active:hover {
+    background-color: #006dcc;
+    background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.datepicker td.active:hover, .datepicker td.active:hover:hover, .datepicker td.active:focus, .datepicker td.active:hover:focus, .datepicker td.active:active, .datepicker td.active:hover:active, .datepicker td.active.active, .datepicker td.active.active:hover, .datepicker td.active.disabled, .datepicker td.active.disabled:hover, .datepicker td.active[disabled], .datepicker td.active[disabled]:hover {
+    background-color: #0044cc;
+    color: #ffffff;
+}
+.datepicker td.active:active, .datepicker td.active:hover:active, .datepicker td.active.active, .datepicker td.active.active:hover {
+}
+.datepicker td span {
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 54px;
+    line-height: 54px;
+    margin: 2px;
+    width: 47px;
+}
+.datepicker td span:hover {
+    background: none repeat scroll 0 0 #eeeeee;
+}
+.datepicker td span.active {
+    background-color: #006dcc;
+    background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.datepicker td span.active:hover, .datepicker td span.active:focus, .datepicker td span.active:active, .datepicker td span.active.active, .datepicker td span.active.disabled, .datepicker td span.active[disabled] {
+    background-color: #0044cc;
+    color: #ffffff;
+}
+.datepicker td span.active:active, .datepicker td span.active.active {
+}
+.datepicker td span.old {
+    color: #999999;
+}
+.datepicker th.switch {
+    width: 145px;
+}
+.datepicker th.next, .datepicker th.prev {
+    font-size: 21px;
+}
+.datepicker thead tr:first-child th {
+    cursor: pointer;
+}
+.datepicker thead tr:first-child th:hover {
+    background: none repeat scroll 0 0 #eeeeee;
+}
+.input-append.date .add-on i, .input-prepend.date .add-on i {
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	background: rgba(250,250,250,0.9);
+	z-index:1500;
+}
+/*###############################################
+Date Picker
+###############################################*/
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../images/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 1550;
+}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.overlay ul li a {
+	font-size: 54px;
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #e3fcb1;
+}
+
+/* Effects */
+.overlay-slidedown,.overlay-slidedown1,.overlay-pwd,.overlay-message{
+	visibility: hidden;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+}
+
+.overlay-slidedown.open,.overlay-slidedown1.open,.overlay-pwd.open,.overlay-message.open{
+	visibility: visible;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+}
+.overlay-heading{
+	color:#000;
+	width:100%;
+	display:block;
+	padding:30px 10px 20px 50px;
+}
+.modal-inner2-cont {
+    margin: auto;
+    text-align: center;
+    width: 962px;
+	color: #000;
+    font-family: 'Open Sans',sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+.signup-form {
+    display: inline-block;
+    width: 410px;
+	float:left;
+}
+
+.signup-form label{
+	float:left;
+	width:150px;
+}
+.overlay input, .overlay select, .overlay textarea {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #09F;
+    border-radius: 2px;
+    font-size: 16px;
+    margin:10px 0 0;
+    padding: 4px 10px;
+    position: relative;
+    top: -4px;
+    width: 100%;
+}
+.smt {
+    background: none repeat scroll 0 0 #2662a6 !important;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 37px;
+    width: auto !important;
+}
+.button-cont {
+	
+  	text-align:right;
+	 font-size: 17px;
+    font-weight: 400;
+}
+.sign-up-or-cont {
+    display: inline-block;
+    width: 100px;
+	float:left;
+}
+.sign-up-modal-or {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 85% auto 0;
+	text-align:center;
+}
+
+.fb-signup{
+	float:left;
+	display:inline-block;
+	width:410px;
+}
+.new-sign-up-tick {
+    background: url("../images/new_sign_up_tick.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 20px;
+    margin: 0 14px;
+    position: relative;
+    top: 3px;
+    width: 20px;
+}
+.sign-pri{
+	display:inline-block;
+}
+.overlay-sign-up, .overlay-login, .overlay-forg-pass, .overlay-reset-pass{
+	top:-100%;
+}
+.pop-forg-pass	{
+	line-height:40px;
+	font-size:12px;
+	}
+.overlay-pro-edit, .overlay-pass-change, .overlay-dec-acc	{
+	top:-100%;
+}
+.overlay-login .modal-inner {
+	width: 90%;
+	margin: auto;
+}
+.modal-inner .row {
+	margin: 0px;
+}
+.modal-inner2-left {
+float: left;
+}
+.overlay-pro-edit .modal-inner2-left, .overlay-pass-change .modal-inner2-left, .overlay-dec-acc .modal-inner2-left, .overlay-forg-pass .modal-inner2-left, .overlay-reset-pass .modal-inner2-left {
+	margin-left:15%;
+	}	
+.modal-items {
+	margin: 0px;
+	padding: 0px;
+	position:relative;
+}
+.sign-up-or-cont {
+	display: inline-block;
+	width: 14%;
+}
+.modal-inner2-right {
+	float: right;
+}
+.modal-heading {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	font-size: 28px;
+	text-align: left;
+	color: #5696bc;
+	text-shadow:1px 1px #fff;
+	margin: 0px auto;
+	float: center;
+	margin-bottom:30px;
+	margin-top: 50px;
+	max-width: 1150px;
+}
+.button-cont {
+	text-align: right;
+	padding: 0px;
+	font-size: 14px;
+	font-weight: 300;
+}
+.button-cont span{
+	margin-right:20px;
+}
+.modal-items input[type="submit"] {
+	padding: 6px 37px;
+	font-size: 14px;
+	color:#fff;
+	background: #09F;
+	font-weight: 400;
+	margin-right:20px;
+	width:140px;
+	float:right;
+}
+.modal-items input[type="button"] {
+	width: auto;
+	padding: 6px 37px;
+	font-size: 14px;
+	color:#fff;
+	background: #09F;
+	font-weight: 400;
+	margin-right:20px;
+	width:140px;
+	float:right;
+}
+#signup-toggle {
+	text-decoration: underline;
+}
+.modal-inner2 {
+	width: 480px;
+	margin: auto;
+	margin-left:0;
+}
+.overlay-reset-pass .modal-inner2 {
+	width: 520px;
+	}
+.ticked-items-signup .col-md-12 {
+	padding: 10px 6px;
+	font-size: 15px;
+}
+.new-sign-up-tick {
+	background: url(../images/new_sign_up_tick.png);
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	margin: 0 14px;
+	position: relative;
+	top: 3px;
+}
+.ticked-items-signup .col-md-12 .sign-pri {
+	display: inline-block;
+	width: 87%;
+}
+.modal-items .col-xs-4 {
+text-align: right;
+padding-right: 17px;
+font-size: 14px;
+font-weight: 400;
+margin:10px 0 0;
+padding-left: 0px;
+}
+.open-id a {
+	width:218px;
+	height:37px;
+	float:left;
+	background:url(../images/social_links.png) no-repeat;
+	display:inline-table;
+	margin:10px 0;
+	position:relative;
+	}
+.open-id a.facbook {
+	background-position:0 0;
+	}
+.open-id a.facbook:hover {
+	background-position:0 -70px;
+	}
+.open-id a.google {
+	background-position:0 -148px;
+	}
+.open-id a.google:hover {
+	background-position:0 -221px;
+	}
+.open-id a.yahoo {
+	background-position:0 -301px;
+	}
+.open-id a.yahoo:hover {
+	background-position:0 -378px;
+	}
+.pup-or	{
+	margin-right:24%;
+	margin-top:50px;
+	}
+.opnen-tootip	{
+	border:1px solid #CCC;
+	background:#fff;
+	padding:5px;
+	position:absolute;
+	font:normal normal 11px/14px Verdana, Geneva, sans-serif;
+	left:0;
+	top:0;
+	height:55px;
+	display:none;
+	}
+.ph-ajax-loader	{
+	position:absolute;
+	right:-20px;
+	top:10px;
+	}
+.ph-ajax-loader	img{
+	display:none;
+	}
+#pup-code-worp	{
+	display:none;
+	}
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
+.plantinum	{
+	color:#000;
+	background:#bcbcbe;
+	text-shadow:0 1px #F3F3F3;
+	font-size:12px;
+	font-weight:bold;
+	border-radius:2px;
+	padding:2px 8px;
+	margin-left:-35px;
+	position:absolute;
+	left:50%;
+	top:4px;
+	z-index:800;
+	}
+.trusttl {
+	background: url(../images/TF_R.png) no-repeat;
+	height: 69px;
+	width: 68px;
+	float: left;
+	position: absolute;
+	top: -8px;
+	left: -9px;
+	z-index:200;
+}
+.trustt2 {
+	background: url(../images/TF_R.png) no-repeat;
+	height: 69px;
+	width: 68px;
+	float: left;
+	position: absolute;
+	top: -3px;
+	left: 12px;
+	z-index:200;
+}
